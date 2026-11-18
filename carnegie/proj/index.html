@@ -12,6 +12,8 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--cream)}
 .scene{position:absolute;left:0;top:0;width:1080px;height:1920px;background:var(--cream);overflow:hidden}
 .card{position:absolute;overflow:hidden;border:1px solid var(--ink);background:#000}
 .card img,.card video{position:absolute;display:block}
+.dl{display:inline-block}
+.card.hv::after{opacity:.95;background:linear-gradient(180deg,#f0c590 0%,#d9904f 100%)}
 .card.nt::after{display:none}
 .card::after{content:"";position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(180deg,#f3d2a6 0%,#e9b27a 100%);mix-blend-mode:multiply;opacity:.55}
@@ -24,7 +26,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--cream)}
 </style>
 </head>
 <body>
-<div id="root" data-composition-id="main" data-start="0" data-duration="61" data-width="1080" data-height="1920">
+<div id="root" data-composition-id="main" data-start="0" data-duration="90" data-width="1080" data-height="1920">
 
 <!-- 0:00-0:03 HOOK -->
 <div id="s1" class="scene clip" data-start="0" data-duration="3" data-track-index="1" style="z-index:1">
@@ -153,7 +155,51 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--cream)}
   <div id="s17-t" class="tx" style="top:1150px;font-size:200px;color:var(--cream);letter-spacing:-.03em">ACERO</div>
 </div>
 
-<div id="flash" class="clip" data-start="0" data-duration="61" data-track-index="2"></div>
+<!-- 1:01-1:05 Puente Eads -->
+<div id="s18" class="scene clip" data-start="61" data-duration="4" data-track-index="1" style="z-index:18;background:#000">
+  <div class="card hv" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="s18-i" src="assets/a17_eads.jpg" style="left:-800px;top:0;width:2898px;height:1920px" /></div>
+  <div style="position:absolute;left:0;right:0;top:1000px;height:920px;background:linear-gradient(180deg,rgba(27,26,23,0),rgba(27,26,23,.86))"></div>
+  <div id="s18-t" class="tx" style="top:1190px;font-size:96px;color:var(--cream)">MISISIPI<br><span class="or">· SAN LUIS</span></div>
+</div>
+
+<!-- 1:05-1:10 Rascacielos -->
+<div id="s19" class="scene clip" data-start="65" data-duration="5" data-track-index="1" style="z-index:19;background:#000">
+  <div id="s19-c" class="card" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="s19-i" src="assets/a18_rascacielos.jpg" style="left:-120px;top:0;width:1566px;height:1920px;transform-origin:50% 100%" /></div>
+  <div style="position:absolute;left:0;right:0;top:1000px;height:920px;background:linear-gradient(180deg,rgba(27,26,23,0),rgba(27,26,23,.86))"></div>
+  <div id="s19-t" class="tx" style="top:1190px;font-size:92px;color:var(--cream)">LOS PRIMEROS<br><span class="or">RASCACIELOS</span></div>
+</div>
+
+<!-- 1:10-1:15 Bibliotecas -->
+<div id="s20" class="scene clip" data-start="70" data-duration="5" data-track-index="1" style="z-index:20;background:#000">
+  <div class="card hv" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="s20-i" src="assets/a19_biblioteca.jpg" style="left:-700px;top:0;width:3682px;height:1920px" /></div>
+  <div style="position:absolute;left:0;right:0;top:1000px;height:920px;background:linear-gradient(180deg,rgba(27,26,23,0),rgba(27,26,23,.86))"></div>
+  <div id="s20-n" class="tx or" style="top:1120px;font-size:170px">+<span id="s20-num">0</span></div>
+  <div id="s20-t" class="tx" style="top:1300px;font-size:64px;color:var(--cream)">BIBLIOTECAS GRATUITAS</div>
+</div>
+
+<!-- 1:15-1:19 Del telar al acero -->
+<div id="s21" class="scene clip" data-start="75" data-duration="4" data-track-index="1" style="z-index:21;background:#000">
+  <div class="card" style="left:0;top:0;width:1080px;height:1920px;border:0"><img src="assets/a6_familia.jpg" style="left:-420px;top:0;width:1920px;height:1920px" /></div>
+  <div id="s21-after" class="card nt" style="left:0;top:0;width:1080px;height:1920px;border:0;clip-path:inset(100% 0 0 0)"><img src="assets/a18_rascacielos.jpg" style="left:-120px;top:0;width:1566px;height:1920px" /></div>
+  <div id="s21-line" style="position:absolute;left:0;top:1917px;width:1080px;height:6px;background:var(--orange)"></div>
+  <div style="position:absolute;left:0;right:0;top:0;height:760px;background:linear-gradient(180deg,rgba(27,26,23,.85),rgba(27,26,23,0))"></div>
+  <div id="s21-t" class="tx" style="top:300px;font-size:92px;color:var(--cream)">DEL TELAR<br><span class="or">AL ACERO</span></div>
+</div>
+
+<!-- 1:19-1:22 Payoff -->
+<div id="s22" class="scene clip" data-start="79" data-duration="3" data-track-index="1" style="z-index:22">
+  <div id="s22-a" class="tx or" style="top:520px;font-size:150px;text-align:center">ADAPTARSE</div>
+  <div id="s22-b" class="tx" style="top:860px;font-size:70px;text-align:center;line-height:1.15">LO QUE NO SE ADAPTA,<br><span id="s22-d" style="display:inline-block"><span class="dl">D</span><span class="dl">E</span><span class="dl">S</span><span class="dl">A</span><span class="dl">P</span><span class="dl">A</span><span class="dl">R</span><span class="dl">E</span><span class="dl">C</span><span class="dl">E</span></span></div>
+</div>
+
+<!-- 1:22-1:30 Cierre -->
+<div id="s23" class="scene clip" data-start="82" data-duration="8" data-track-index="1" style="z-index:23">
+  <div id="s23-a" class="tx" style="top:470px;font-size:58px;text-align:center;color:var(--muted);letter-spacing:.06em">EL CAMBIO NO AVISA.</div>
+  <div id="s23-q" class="tx" style="top:590px;font-size:100px;text-align:center;line-height:1.05">¿TE <span class="or">ADAPTAS</span> O TE QUEDAS ATRÁS?</div>
+  <div id="s23-b" style="position:absolute;left:190px;top:1130px;width:700px;height:130px;background:var(--orange);color:var(--cream);font-weight:900;font-size:60px;letter-spacing:.08em;display:flex;align-items:center;justify-content:center">SÍGUEME</div>
+</div>
+
+<div id="flash" class="clip" data-start="0" data-duration="90" data-track-index="2"></div>
 </div>
 <script>
 window.__timelines = window.__timelines || {};
@@ -241,6 +287,35 @@ tl.set("#s17-heat",{opacity:0},0);
 tl.to("#s17-heat",{opacity:.6,duration:.06,ease:"none"},57);
 tl.to("#s17-heat",{opacity:0,duration:.5,ease:"power2.out"},57.06);
 tl.fromTo("#s17-t",{scale:1.5,opacity:0},{scale:1,opacity:1,duration:.2,ease:"power4.out"},57);
+
+// S18
+tl.fromTo("#s18-i",{x:0},{x:-500,duration:4,ease:"none"},61);
+tl.fromTo("#s18-t",{x:80,opacity:0},{x:0,opacity:1,duration:.3,ease:E},61.3);
+// S19
+tl.fromTo("#s19-c",{clipPath:"inset(100% 0 0 0)"},{clipPath:"inset(0% 0 0 0)",duration:.5,ease:"power3.out"},65);
+tl.fromTo("#s19-i",{scale:1},{scale:1.15,duration:5,ease:"none"},65);
+tl.fromTo("#s19-t",{y:40,opacity:0},{y:0,opacity:1,duration:.3,ease:E},65.4);
+// S20
+tl.fromTo("#s20-i",{x:0},{x:-700,duration:5,ease:"none"},70);
+const bo={v:0}; const bn=document.getElementById("s20-num");
+tl.fromTo(bo,{v:0},{v:2500,duration:2.5,ease:"expo.out",onUpdate(){bn.textContent=String(Math.round(bo.v)).replace(/\B(?=(\d{3})+(?!\d))/g,".")}},70.2);
+tl.fromTo("#s20-n",{opacity:0,y:30},{opacity:1,y:0,duration:.25,ease:E},70.2);
+tl.fromTo("#s20-t",{opacity:0},{opacity:1,duration:.3},70.6);
+// S21
+tl.fromTo("#s21-after",{clipPath:"inset(100% 0 0 0)"},{clipPath:"inset(0% 0 0 0)",duration:1.5,ease:"power2.inOut"},75.5);
+tl.fromTo("#s21-line",{y:0},{y:-1917,duration:1.5,ease:"power2.inOut"},75.5);
+tl.fromTo("#s21-t",{opacity:0,y:30},{opacity:1,y:0,duration:.3,ease:E},75.2);
+// S22
+tl.fromTo("#s22-a",{scale:.8,opacity:0},{scale:1,opacity:1,duration:.3,ease:"power4.out"},79.1);
+tl.fromTo("#s22-b",{opacity:0,y:30},{opacity:1,y:0,duration:.4,ease:E},80);
+document.querySelectorAll("#s22-d .dl").forEach((el,i)=>{
+  tl.to(el,{opacity:0,y:-70-(i%3)*20,x:(i-4.5)*14,rotation:(i%2?1:-1)*25,duration:.7,ease:"power2.in"},81.1+i*.04);
+});
+// S23
+tl.fromTo("#s23-a",{opacity:0},{opacity:1,duration:.3},82.1);
+tl.fromTo("#s23-q",{opacity:0,scale:.92},{opacity:1,scale:1,duration:.3,ease:"back.out(2)"},82.5);
+tl.fromTo("#s23-b",{opacity:0,scale:.8},{opacity:1,scale:1,duration:.3,ease:"back.out(2)"},86);
+tl.to("#s23-b",{scale:1.06,duration:.45,yoyo:true,repeat:5,ease:"sine.inOut"},86.4);
 window.__timelines["main"] = tl;
 </script>
 </body>
