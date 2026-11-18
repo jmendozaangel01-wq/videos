@@ -23,7 +23,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--cream)}
 </style>
 </head>
 <body>
-<div id="root" data-composition-id="main" data-start="0" data-duration="26" data-width="1080" data-height="1920">
+<div id="root" data-composition-id="main" data-start="0" data-duration="45" data-width="1080" data-height="1920">
 
 <!-- 0:00-0:03 HOOK -->
 <div id="s1" class="scene clip" data-start="0" data-duration="3" data-track-index="1" style="z-index:1">
@@ -79,7 +79,50 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--cream)}
   </div>
 </div>
 
-<div id="flash" class="clip" data-start="0" data-duration="26" data-track-index="2"></div>
+
+<!-- 0:26-0:30 Travesía -->
+<div id="s8" class="scene clip" data-start="26" data-duration="4" data-track-index="1" style="z-index:8;background:#000">
+  <img id="s8-i" src="assets/a7_travesia.jpg" style="position:absolute;left:0;top:0;width:1080px;height:1913px;transform-origin:60% 60%" />
+  <div class="card" style="inset:0;border:0;background:transparent;width:1080px;height:1920px"></div>
+  <div style="position:absolute;left:0;right:0;top:880px;height:1040px;background:linear-gradient(180deg,rgba(27,26,23,0),rgba(27,26,23,.82))"></div>
+  <div id="s8-r" class="tx" style="top:1020px;font-size:44px;letter-spacing:.14em;color:var(--cream);font-weight:700;display:flex;justify-content:space-between"><span>ESCOCIA</span><span>EE. UU.</span></div>
+  <div id="s8-line" style="position:absolute;left:80px;top:1100px;height:6px;width:870px;background:var(--orange);transform-origin:0 50%"></div>
+  <div id="s8-age" class="tx" style="top:1150px;font-size:150px;color:var(--cream)"><span id="s8-num">0</span> <span class="or">AÑOS</span></div>
+</div>
+
+<!-- 0:30-0:34 Fábrica -->
+<div id="s9" class="scene clip" data-start="30" data-duration="4" data-track-index="1" style="z-index:9;background:#000">
+  <div id="s9-c" class="card" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="s9-i" src="assets/a8_fabrica.jpg" style="left:-700px;top:0;width:2698px;height:1920px" /></div>
+  <div style="position:absolute;left:0;right:0;top:1000px;height:920px;background:linear-gradient(180deg,rgba(27,26,23,0),rgba(27,26,23,.85))"></div>
+  <div id="s9-t" class="tx" style="top:1180px;font-size:92px;color:var(--cream)">FÁBRICA<br><span class="or">DE ALGODÓN</span></div>
+</div>
+
+<!-- 0:34-0:36 Autodidacta (A9 pendiente) -->
+<div id="s10" class="scene clip" data-start="34" data-duration="2" data-track-index="1" style="z-index:10">
+  <div id="s10-t" class="tx" style="top:760px;font-size:128px;text-align:center">AUTO<span class="or">DIDACTA</span></div>
+</div>
+
+<!-- 0:36-0:38 Mensajero -->
+<div id="s11" class="scene clip" data-start="36" data-duration="2" data-track-index="1" style="z-index:11;background:#000">
+  <div class="card" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="s11-i" src="assets/a10_mensajero.jpg" style="left:-780px;top:0;width:2878px;height:1920px" /></div>
+  <div style="position:absolute;left:0;right:0;top:1000px;height:920px;background:linear-gradient(180deg,rgba(27,26,23,0),rgba(27,26,23,.85))"></div>
+  <div id="s11-t" class="tx" style="top:1190px;font-size:76px;color:var(--cream)">MENSAJERO DE <span class="or">TELÉGRAFOS</span></div>
+</div>
+
+<!-- 0:38-0:42 Thomas Scott -->
+<div id="s12" class="scene clip" data-start="38" data-duration="4" data-track-index="1" style="z-index:12">
+  <div id="s12-c" class="card" style="left:220px;top:250px;width:640px;height:810px"><img id="s12-i" src="assets/a11_scott.jpg" style="left:0;top:0;width:640px;height:810px" /></div>
+  <div id="s12-bar" class="bar" style="top:1040px;font-size:38px"><i></i>THOMAS SCOTT</div>
+  <div id="s12-sub" class="tx" style="top:1160px;font-size:48px;letter-spacing:.1em;color:var(--muted);font-weight:700">EMPRESARIO FERROVIARIO</div>
+</div>
+
+<!-- 0:42-0:45 Oficina de telégrafo -->
+<div id="s13" class="scene clip" data-start="42" data-duration="3" data-track-index="1" style="z-index:13">
+  <div id="s13-c" class="card" style="left:40px;top:330px;width:1000px;height:457px"><img id="s13-i" src="assets/a12_telegrafo.jpg" style="left:0;top:0;width:1000px;height:457px" /></div>
+  <div id="s13-t" class="tx" style="top:880px;font-size:84px;text-align:center">SECRETARIO<br><span class="or">+ TELEGRAFISTA</span></div>
+</div>
+
+<div id="flash" class="clip" data-start="0" data-duration="45" data-track-index="2"></div>
 </div>
 <script>
 window.__timelines = window.__timelines || {};
@@ -125,6 +168,31 @@ tl.fromTo("#s6-t",{scale:1.5,opacity:0},{scale:1,opacity:1,duration:.2,ease:"pow
 ["#s7-w1","#s7-w2","#s7-w3","#s7-w4","#s7-w5"].forEach((id,i)=>{
   tl.fromTo(id,{opacity:0,y:40},{opacity:1,y:0,duration:.25,ease:E},22.4+i*0.4);
 });
+
+// S8
+tl.fromTo("#s8-i",{scale:1},{scale:1.12,duration:4,ease:"none"},26);
+tl.fromTo("#s8-r",{opacity:0},{opacity:1,duration:.3},26.2);
+tl.fromTo("#s8-line",{scaleX:0},{scaleX:1,duration:3,ease:"none"},26.3);
+const a={v:0}; const an=document.getElementById("s8-num");
+tl.fromTo(a,{v:0},{v:12,duration:3,ease:"none",onUpdate(){an.textContent=Math.round(a.v)}},26.3);
+tl.fromTo("#s8-age",{opacity:0,y:30},{opacity:1,y:0,duration:.3,ease:E},26.3);
+// S9
+tl.fromTo("#s9-i",{x:0},{x:-420,duration:4,ease:"none"},30);
+tl.fromTo("#s9-t",{x:80,opacity:0},{x:0,opacity:1,duration:.3,ease:E},30.3);
+// S10
+tl.fromTo("#s10-t",{scale:.85,opacity:0},{scale:1,opacity:1,duration:.3,ease:"back.out(2)"},34);
+// S11
+tl.fromTo("#s11-i",{x:0},{x:-120,duration:2,ease:"none"},36);
+tl.fromTo("#s11-t",{x:80,opacity:0},{x:0,opacity:1,duration:.3,ease:E},36.2);
+// S12
+tl.fromTo("#s12-c",{opacity:0,y:50},{opacity:1,y:0,duration:.3,ease:E},38);
+tl.fromTo("#s12-i",{scale:1},{scale:1.1,duration:4,ease:"none"},38);
+tl.fromTo("#s12-bar",{x:-1080},{x:0,duration:.35,ease:"power3.out"},38.3);
+tl.fromTo("#s12-sub",{opacity:0},{opacity:1,duration:.3},38.6);
+// S13
+tl.fromTo("#s13-c",{opacity:0,y:50},{opacity:1,y:0,duration:.3,ease:E},42);
+tl.fromTo("#s13-i",{scale:1},{scale:1.1,duration:3,ease:"none"},42);
+tl.fromTo("#s13-t",{opacity:0,scale:.9},{opacity:1,scale:1,duration:.25,ease:"back.out(2)"},42.2);
 window.__timelines["main"] = tl;
 </script>
 </body>
