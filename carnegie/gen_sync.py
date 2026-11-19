@@ -31,11 +31,9 @@ B["p2"]=('','''
 B["p3"]=('','''
   <div id="p3-c" class="card" style="left:236px;top:200px;width:608px;height:900px"><img id="p3-i" src="assets/b3_maquina.jpg" style="left:0;top:0;width:608px;height:900px" /></div>
   <div id="p3-t" class="tx" style="top:1150px;font-size:74px;text-align:center">MÁQUINAS TOMARON<br><span class="or">SUS EMPLEOS</span></div>''')
-B["s4"]=("background:#000",'''
-  '''+full("s4-i","a6_familia.jpg","left:-60px;top:0;width:1920px;height:1920px")+'''
-  <div id="s4-gray" style="position:absolute;inset:0;background:#808080;mix-blend-mode:saturation;opacity:0"></div>
-  '''+V+'''
-  <div id="s4-t" class="tx" style="top:1100px;font-size:120px;color:var(--cream)">EL PEQUEÑO<br><span class="or">ANDREW</span></div>''')
+B["s4"]=('','''
+  <div id="s4-c" class="card" style="left:40px;top:330px;width:1000px;height:563px"><img id="s4-i" src="assets/d1_andrew_joven.jpg" style="left:0;top:0;width:1000px;height:563px;transform-origin:58% 40%" /></div>
+  <div id="s4-t" class="tx" style="top:980px;font-size:120px;text-align:center">EL PEQUEÑO<br><span class="or">ANDREW</span></div>''')
 B["s5"]=('','''
   <div class="tx" style="top:640px;font-size:140px;text-align:center;line-height:1.08">
     <span id="s5-w1" style="display:inline-block">ELIGIÓ</span><br>

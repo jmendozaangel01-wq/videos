@@ -24,9 +24,8 @@ popUp("#p2-t",S.p2+.15,30);
 cardIn("#p3-c",S.p3); tl.fromTo("#p3-i",{scale:1},{scale:1.1,duration:D.p3,ease:"none"},S.p3);
 popUp("#p3-t",S.p3+.15,30);
 // s4 el pequeño Andrew
-tl.fromTo("#s4-i",{x:0},{x:-300,duration:D.s4,ease:"none"},S.s4);
-tl.fromTo("#s4-gray",{opacity:0},{opacity:.85,duration:.8,ease:"power1.out"},S.s4);
-slideIn("#s4-t",S.s4+.1);
+cardIn("#s4-c",S.s4); tl.fromTo("#s4-i",{scale:1},{scale:1.25,duration:D.s4,ease:"none"},S.s4);
+popUp("#s4-t",S.s4+.1,30);
 // s5 eligió otro camino
 ["#s5-w1","#s5-w2","#s5-w3"].forEach((id,i)=>tl.fromTo(id,{opacity:0,y:40},{opacity:1,y:0,duration:.25,ease:E},S.s5+.1+i*.45));
 // s6 barco
