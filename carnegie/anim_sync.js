@@ -89,7 +89,7 @@ tl.fromTo("#s21-t",{opacity:0,y:30},{opacity:1,y:0,duration:.25,ease:E},S.s21+.5
 // s22 el secreto
 tl.fromTo("#s22-a",{opacity:0,scale:.9},{opacity:1,scale:1,duration:.3,ease:"back.out(2)"},S.s22+.1);
 tl.fromTo("#s22-strike",{scaleX:0},{scaleX:1,duration:.35,ease:"power3.out"},74.9);
-tl.fromTo("#s22-a",{y:0},{y:-60,duration:.4,ease:"power2.inOut"},75.4);
+tl.fromTo("#s22-a",{y:200},{y:0,duration:.4,ease:"power2.inOut"},75.4);
 tl.fromTo("#s22-b",{opacity:0,scale:.8},{opacity:1,scale:1,duration:.3,ease:"power4.out"},75.6);
 // s23 robot
 tl.fromTo("#s23-v",{scale:1.0},{scale:1.1,duration:D.s23,ease:"none"},S.s23);

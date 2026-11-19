@@ -15,27 +15,27 @@ B["s1"]=("background:transparent",'''
   <div style="position:absolute;left:0;right:0;top:900px;height:1020px;background:linear-gradient(180deg,rgba(27,26,23,0),rgba(27,26,23,.88))"></div>
   <div id="s1-t" class="tx" style="top:1010px;font-size:108px;color:var(--cream)">¿TE <span class="or">REEMPLAZAN</span><br>O TE ADAPTAS?</div>''')
 B["s2"]=('','''
-  <div id="s2-c" class="card" style="left:40px;top:250px;width:1000px;height:720px"><img id="s2-i" src="assets/a2_telar_mecanico.jpg" style="left:-60px;top:0;width:1121px;height:720px;transform-origin:45% 55%" /></div>
-  <div id="s2-k" class="tx" style="top:1020px;font-size:40px;letter-spacing:.16em;color:var(--muted);font-weight:700">REVOLUCIÓN INDUSTRIAL</div>
-  <div id="s2-t" class="tx" style="top:1090px;font-size:130px">DÉCADA<br>DE <span class="or">1840</span></div>''')
+  <div id="s2-c" class="card" style="left:40px;top:345px;width:1000px;height:800px"><img id="s2-i" src="assets/a2_telar_mecanico.jpg" style="left:-122px;top:0;width:1245px;height:800px;transform-origin:45% 55%" /></div>
+  <div id="s2-k" class="tx" style="top:1180px;font-size:40px;letter-spacing:.16em;color:var(--muted);font-weight:700">REVOLUCIÓN INDUSTRIAL</div>
+  <div id="s2-t" class="tx" style="top:1250px;font-size:130px">DÉCADA<br>DE <span class="or">1840</span></div>''')
 B["s3"]=('','''
-  <div id="s3-c" class="card" style="left:160px;top:200px;width:760px;height:901px"><img id="s3-i" src="assets/c1_familia_carnegie.jpg" style="left:0;top:0;width:760px;height:901px" /></div>
-  <div id="s3-t" class="tx" style="top:1160px;font-size:120px;text-align:center">FAMILIA<br><span class="or">CARNEGIE</span></div>''')
+  <div id="s3-c" class="card" style="left:140px;top:310px;width:800px;height:949px"><img id="s3-i" src="assets/c1_familia_carnegie.jpg" style="left:0;top:0;width:800px;height:949px" /></div>
+  <div id="s3-t" class="tx" style="top:1300px;font-size:120px;text-align:center">FAMILIA<br><span class="or">CARNEGIE</span></div>''')
 B["p1"]=("background:#000",'''
   <div class="card" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="p1-i" src="assets/b2_fabrica_pintura.jpg" style="left:-123px;top:0;width:1327px;height:1920px" /></div>
   '''+V+'''
   <div id="p1-t" class="tx" style="top:1150px;font-size:100px;color:var(--cream)">MILES DE<br><span class="or">TEJEDORES</span></div>''')
 B["p2"]=('','''
-  <div id="p2-c" class="card" style="left:40px;top:280px;width:1000px;height:750px"><img id="p2-i" src="assets/b1_protesta.jpg" style="left:0;top:0;width:1000px;height:750px" /></div>
-  <div id="p2-t" class="tx" style="top:1110px;font-size:120px;text-align:center">POBREZA<br><span class="or">EXTREMA</span></div>''')
+  <div id="p2-c" class="card" style="left:40px;top:400px;width:1000px;height:750px"><img id="p2-i" src="assets/b1_protesta.jpg" style="left:0;top:0;width:1000px;height:750px" /></div>
+  <div id="p2-t" class="tx" style="top:1210px;font-size:120px;text-align:center">POBREZA<br><span class="or">EXTREMA</span></div>''')
 B["p3"]=('','''
-  <div id="p3-c" class="card" style="left:236px;top:200px;width:608px;height:900px"><img id="p3-i" src="assets/b3_maquina.jpg" style="left:0;top:0;width:608px;height:900px" /></div>
-  <div id="p3-t" class="tx" style="top:1150px;font-size:74px;text-align:center">MÁQUINAS TOMARON<br><span class="or">SUS EMPLEOS</span></div>''')
+  <div id="p3-c" class="card" style="left:210px;top:337px;width:660px;height:977px"><img id="p3-i" src="assets/b3_maquina.jpg" style="left:0;top:0;width:660px;height:977px" /></div>
+  <div id="p3-t" class="tx" style="top:1364px;font-size:74px;text-align:center">MÁQUINAS TOMARON<br><span class="or">SUS EMPLEOS</span></div>''')
 B["s4"]=('','''
-  <div id="s4-c" class="card" style="left:40px;top:330px;width:1000px;height:563px"><img id="s4-i" src="assets/d1_andrew_joven.jpg" style="left:0;top:0;width:1000px;height:563px;transform-origin:58% 40%" /></div>
-  <div id="s4-t" class="tx" style="top:980px;font-size:120px;text-align:center">EL PEQUEÑO<br><span class="or">ANDREW</span></div>''')
+  <div id="s4-c" class="card" style="left:40px;top:420px;width:1000px;height:700px"><img id="s4-i" src="assets/d1_andrew_joven.jpg" style="left:-200px;top:0;width:1243px;height:700px;transform-origin:58% 40%" /></div>
+  <div id="s4-t" class="tx" style="top:1190px;font-size:120px;text-align:center">EL PEQUEÑO<br><span class="or">ANDREW</span></div>''')
 B["s5"]=('','''
-  <div class="tx" style="top:640px;font-size:140px;text-align:center;line-height:1.08">
+  <div class="tx" style="top:700px;font-size:150px;text-align:center;line-height:1.08">
     <span id="s5-w1" style="display:inline-block">ELIGIÓ</span><br>
     <span id="s5-w2" style="display:inline-block">OTRO</span>
     <span id="s5-w3" class="or" style="display:inline-block">CAMINO</span>
@@ -63,18 +63,18 @@ B["s9"]=("background:#000",'''
   <div id="s9-b" class="tx" style="top:1170px;font-size:100px;color:var(--cream)"><span class="or">ELOCUENCIA</span></div>
   <div id="s9-c" class="tx" style="top:1170px;font-size:100px;color:var(--cream)">NATURALEZA <span class="or">HUMANA</span></div>''')
 B["s10"]=('','''
-  <div id="s10-c" class="card" style="left:220px;top:250px;width:640px;height:810px"><img id="s10-i" src="assets/a11_scott.jpg" style="left:0;top:0;width:640px;height:810px" /></div>
-  <div id="s10-bar" class="bar" style="top:1040px;font-size:38px"><i></i>THOMAS SCOTT</div>
-  <div id="s10-sub" class="tx" style="top:1160px;font-size:48px;letter-spacing:.1em;color:var(--muted);font-weight:700">EMPRESARIO FERROVIARIO</div>''')
+  <div id="s10-c" class="card" style="left:160px;top:330px;width:760px;height:962px"><img id="s10-i" src="assets/a11_scott.jpg" style="left:0;top:0;width:760px;height:962px" /></div>
+  <div id="s10-bar" class="bar" style="top:1272px;font-size:38px"><i></i>THOMAS SCOTT</div>
+  <div id="s10-sub" class="tx" style="top:1392px;font-size:48px;letter-spacing:.1em;color:var(--muted);font-weight:700">EMPRESARIO FERROVIARIO</div>''')
 B["s11"]=('','''
-  <div id="s11-c" class="card" style="left:40px;top:330px;width:1000px;height:457px"><img id="s11-i" src="assets/a12_telegrafo.jpg" style="left:0;top:0;width:1000px;height:457px" /></div>
-  <div id="s11-t" class="tx" style="top:880px;font-size:84px;text-align:center">SECRETARIO<br><span class="or">+ TELEGRAFISTA</span></div>''')
+  <div id="s11-c" class="card" style="left:40px;top:460px;width:1000px;height:700px"><img id="s11-i" src="assets/a12_telegrafo.jpg" style="left:-266px;top:0;width:1532px;height:700px" /></div>
+  <div id="s11-t" class="tx" style="top:1220px;font-size:84px;text-align:center">SECRETARIO<br><span class="or">+ TELEGRAFISTA</span></div>''')
 B["s12"]=('','''
-  <div id="s12-c" class="card" style="left:220px;top:250px;width:640px;height:810px"><img id="s12-i" src="assets/a11_scott.jpg" style="left:0;top:0;width:640px;height:810px" /></div>
-  <div id="s12-t" class="tx" style="top:1110px;font-size:130px;text-align:center">SU <span class="or">MENTOR</span></div>''')
+  <div id="s12-c" class="card" style="left:160px;top:357px;width:760px;height:962px"><img id="s12-i" src="assets/a11_scott.jpg" style="left:0;top:0;width:760px;height:962px" /></div>
+  <div id="s12-t" class="tx" style="top:1369px;font-size:130px;text-align:center">SU <span class="or">MENTOR</span></div>''')
 B["s13"]=('','''
-  <div class="card" style="left:0;top:260px;width:1080px;height:1000px;border-left:0;border-right:0"><img id="s13-i" src="assets/a13_locomotora.jpg" style="left:0;top:0;width:1645px;height:1000px" /></div>
-  <div id="s13-t" class="tx" style="top:1320px;font-size:96px;text-align:center">TRENES<br><span class="or">INVERSIONES</span></div>''')
+  <div class="card" style="left:0;top:300px;width:1080px;height:1000px;border-left:0;border-right:0"><img id="s13-i" src="assets/a13_locomotora.jpg" style="left:0;top:0;width:1645px;height:1000px" /></div>
+  <div id="s13-t" class="tx" style="top:1360px;font-size:96px;text-align:center">TRENES<br><span class="or">INVERSIONES</span></div>''')
 B["s14"]=("background:#000",'''
   <div class="card nt" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="s14-i" src="assets/a14_puente_fuego.jpg" style="left:0;top:0;width:1084px;height:1920px;transform-origin:45% 45%" /></div>
   <div style="position:absolute;left:0;right:0;top:960px;height:960px;background:linear-gradient(180deg,rgba(27,26,23,0),rgba(27,26,23,.88))"></div>
@@ -102,22 +102,22 @@ B["s18"]=("background:#000",'''
   '''+V+'''
   <div id="s18-t" class="tx" style="top:1190px;font-size:96px;color:var(--cream)">PUENTES</div>''')
 B["s19"]=('','''
-  <div class="card" style="left:0;top:260px;width:1080px;height:1000px;border-left:0;border-right:0"><img id="s19-i" src="assets/a13_locomotora.jpg" style="left:0;top:0;width:1645px;height:1000px" /></div>
-  <div id="s19-t" class="tx" style="top:1320px;font-size:92px;text-align:center">REDES DE<br><span class="or">FERROCARRIL</span></div>''')
+  <div class="card" style="left:0;top:300px;width:1080px;height:1000px;border-left:0;border-right:0"><img id="s19-i" src="assets/a13_locomotora.jpg" style="left:0;top:0;width:1645px;height:1000px" /></div>
+  <div id="s19-t" class="tx" style="top:1360px;font-size:92px;text-align:center">REDES DE<br><span class="or">FERROCARRIL</span></div>''')
 B["s20"]=("background:#000",'''
   <div id="s20-c" class="card" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="s20-i" src="assets/a18_rascacielos.jpg" style="left:-120px;top:0;width:1566px;height:1920px;transform-origin:50% 100%" /></div>
   '''+V+'''
   <div id="s20-t" class="tx" style="top:1190px;font-size:92px;color:var(--cream)">LOS PRIMEROS<br><span class="or">RASCACIELOS</span></div>''')
 B["s21"]=('','''
-  <div id="s21-c" class="card" style="left:190px;top:210px;width:700px;height:820px"><img id="s21-i" src="assets/a3_carnegie.jpg" style="left:0;top:0;width:700px;height:820px" /></div>
-  <div id="s21-bar" class="bar" style="top:1000px"><i></i>ANDREW CARNEGIE</div>
-  <div id="s21-t" class="tx" style="top:1130px;font-size:100px;text-align:center">FORTUNA<br><span class="or">MILLONARIA</span></div>''')
+  <div id="s21-c" class="card" style="left:160px;top:280px;width:760px;height:890px"><img id="s21-i" src="assets/a3_carnegie.jpg" style="left:0;top:0;width:760px;height:890px" /></div>
+  <div id="s21-bar" class="bar" style="top:1150px"><i></i>ANDREW CARNEGIE</div>
+  <div id="s21-t" class="tx" style="top:1280px;font-size:100px;text-align:center">FORTUNA<br><span class="or">MILLONARIA</span></div>''')
 B["s22"]=('','''
-  <div id="s22-a" class="tx" style="top:470px;font-size:130px;text-align:center;line-height:1.02">NO FUE EL<br><span style="position:relative;display:inline-block">ACERO<span id="s22-strike" style="position:absolute;left:-2%;top:50%;width:104%;height:16px;margin-top:-8px;background:var(--orange);transform-origin:0 50%"></span></span></div>
-  <div id="s22-b" class="tx or" style="top:1000px;font-size:150px;text-align:center;line-height:1.02"><span style="color:var(--ink);font-size:80px;display:block;line-height:1.1">FUE</span>ADAPTARSE</div>''')
+  <div id="s22-a" class="tx" style="top:560px;font-size:130px;text-align:center;line-height:1.02">NO FUE EL<br><span style="position:relative;display:inline-block">ACERO<span id="s22-strike" style="position:absolute;left:-2%;top:50%;width:104%;height:16px;margin-top:-8px;background:var(--orange);transform-origin:0 50%"></span></span></div>
+  <div id="s22-b" class="tx or" style="top:1020px;font-size:150px;text-align:center;line-height:1.02"><span style="color:var(--ink);font-size:80px;display:block;line-height:1.1">FUE</span>ADAPTARSE</div>''')
 B["s24"]=('','''
-  <div id="s24-b" style="position:absolute;left:190px;top:700px;width:700px;height:130px;background:var(--orange);color:var(--cream);font-weight:900;font-size:60px;letter-spacing:.08em;display:flex;align-items:center;justify-content:center">SÍGUEME</div>
-  <div id="s24-s" class="tx" style="top:880px;font-size:40px;text-align:center;letter-spacing:.14em;color:var(--muted);font-weight:700">PARA MÁS HISTORIAS ASÍ</div>''')
+  <div id="s24-b" style="position:absolute;left:160px;top:830px;width:760px;height:150px;background:var(--orange);color:var(--cream);font-weight:900;font-size:66px;letter-spacing:.08em;display:flex;align-items:center;justify-content:center">SÍGUEME</div>
+  <div id="s24-s" class="tx" style="top:1030px;font-size:44px;text-align:center;letter-spacing:.14em;color:var(--muted);font-weight:700">PARA MÁS HISTORIAS ASÍ</div>''')
 html='''
 <video id="hook-v" class="clip" src="assets/hook_video_src.mp4" muted playsinline data-start="0" data-duration="3.1" data-media-start="16.1" data-track-index="2" style="position:absolute;left:-54px;top:0;width:1188px;height:2112px;object-fit:cover;z-index:0"></video>
 '''
