@@ -77,7 +77,7 @@ B["s13"]=('','''
   <div class="card" style="left:0;top:300px;width:1080px;height:1000px;border-left:0;border-right:0"><img id="s13-i" src="assets/a13_locomotora.jpg" style="left:0;top:0;width:1645px;height:1000px" /></div>
   <div id="s13-t" class="tx" style="top:1360px;font-size:96px;text-align:center">TRENES<br><span class="or">INVERSIONES</span></div>''')
 B["s14"]=("background:#000",'''
-  <div class="card nt" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="s14-i" src="assets/a14_puente_fuego.jpg" style="left:0;top:0;width:1084px;height:1920px;transform-origin:45% 45%" /></div>
+  <div class="card nt" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="s14-i" src="assets/e2_puente_madera.jpg" style="left:0;top:0;width:1084px;height:1920px;transform-origin:85% 52%" /></div>
   <div style="position:absolute;left:0;right:0;top:960px;height:960px;background:linear-gradient(180deg,rgba(27,26,23,0),rgba(27,26,23,.88))"></div>
   <div id="s14-k" class="tx" style="top:1080px;font-size:40px;letter-spacing:.16em;color:var(--cream);font-weight:700">PERO NOTÓ ALGO</div>
   <div id="s14-t" class="tx" style="top:1130px;font-size:100px;color:var(--cream)">PUENTES DE<br><span class="or">MADERA</span></div>''')

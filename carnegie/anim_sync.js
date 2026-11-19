@@ -58,7 +58,7 @@ tl.fromTo("#s12-i",{scale:1},{scale:1.12,duration:D.s12,ease:"none"},S.s12);
 slideIn("#s12-t",S.s12+.3);
 tl.fromTo("#s13-i",{x:-30},{x:-560,duration:D.s13,ease:"power1.inOut"},S.s13); popUp("#s13-t",S.s13+.1);
 // s14 puente en llamas
-tl.fromTo("#s14-i",{scale:1},{scale:1.15,duration:D.s14,ease:"none"},S.s14);
+tl.fromTo("#s14-i",{scale:1},{scale:1.22,duration:D.s14,ease:"none"},S.s14);
 tl.set("#s14-t",{opacity:0},0);
 fade("#s14-k",S.s14+.1); tl.to("#s14-k",{opacity:0,duration:.15},47.3);
 tl.fromTo("#s14-t",{opacity:0,x:-14},{opacity:1,x:0,duration:.4,ease:"elastic.out(1,.3)"},47.5);
