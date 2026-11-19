@@ -4,7 +4,7 @@ V='<div style="position:absolute;left:0;right:0;top:1000px;height:920px;backgrou
 # (id,start,end)
 T=[("s1",0,3.2),("s2",3.2,6.0),("s3",6.0,9.0),("p1",9.0,10.5),("p2",10.5,12.4),("p3",12.4,14.0),("s4",14.0,15.4),("s5",15.4,16.8),("s6",16.8,19.6),("s7",19.6,21.9),("s8",21.9,24.8),
 ("s9",24.8,32.6),("s10",32.6,37.1),("s11",37.1,39.6),("s12",39.6,43.3),("s13",43.3,45.8),("s14",45.8,49.4),("s15",49.4,54.5),
-("s16",54.5,59.6),("s17",59.6,62.8),("s18",62.8,66.0),("s19",66.0,68.9),("s20",68.9,71.4),("s21",71.4,73.7),("s22",73.7,77.9),
+("s16",54.5,57.0),("q1",57.0,58.3),("q2",58.3,59.8),("q3",59.8,62.8),("s18",62.8,66.0),("s19",66.0,68.9),("s20",68.9,71.4),("s21",71.4,73.7),("s22",73.7,77.9),
 ("s23",77.9,82.2),("s24",82.2,86.0)]
 S={i:a for i,a,b in T}; D={i:round(b-a,2) for i,a,b in T}
 TOTAL=86.0
@@ -92,12 +92,17 @@ B["s16"]=("background:#000",'''
   '''+V+'''
   <div id="s16-k" class="tx" style="top:1110px;font-size:44px;letter-spacing:.16em;color:var(--cream);font-weight:700">SU VISIÓN FUE EL</div>
   <div id="s16-t" class="tx" style="top:1150px;font-size:200px;color:var(--cream);letter-spacing:-.03em">ACERO</div>''')
-B["s17"]=("background:#000",'''
-  <div class="card" style="left:0;top:0;width:1080px;height:1920px;border:0"><img src="assets/a2_telar_mecanico.jpg" style="left:-790px;top:0;width:2989px;height:1920px" /></div>
-  <div id="s17-after" class="card" style="left:0;top:0;width:1080px;height:1920px;border:0;clip-path:inset(100% 0 0 0)"><img src="assets/a16_acero.jpg" style="left:-560px;top:0;width:2376px;height:1920px" /></div>
-  <div id="s17-line" style="position:absolute;left:0;top:1917px;width:1080px;height:6px;background:var(--orange)"></div>
-  <div style="position:absolute;left:0;right:0;top:0;height:760px;background:linear-gradient(180deg,rgba(27,26,23,.85),rgba(27,26,23,0))"></div>
-  <div id="s17-t" class="tx" style="top:300px;font-size:92px;color:var(--cream)">LO TRADICIONAL<br><span class="or">CAMBIA</span></div>''')
+B["q1"]=('','''
+  <div id="q1-c" class="card" style="left:40px;top:420px;width:1000px;height:665px"><img id="q1-i" src="assets/f2_convertidor.jpg" style="left:0;top:0;width:1000px;height:665px" /></div>
+  <div id="q1-t" class="tx" style="top:1170px;font-size:110px;text-align:center">LO<br><span class="or">TRADICIONAL</span></div>''')
+B["q2"]=("background:#000",'''
+  <div class="card hv" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="q2-i" src="assets/f3_alto_horno.jpg" style="left:0;top:0;width:1084px;height:1928px;transform-origin:50% 40%" /></div>
+  '''+V+'''
+  <div id="q2-t" class="tx" style="top:1190px;font-size:130px;color:var(--cream)">CAMBIARÍA</div>''')
+B["q3"]=('','''
+  <div id="q3-c" class="card" style="left:40px;top:454px;width:1000px;height:563px"><img id="q3-i" src="assets/f1_caricatura.jpg" style="left:0;top:0;width:1000px;height:563px" /></div>
+  <div id="q3-k" class="tx" style="top:1075px;font-size:44px;letter-spacing:.16em;color:var(--muted);font-weight:700;text-align:center">ESTA VEZ</div>
+  <div id="q3-t" class="tx" style="top:1140px;font-size:110px;text-align:center">DEL LADO<br><span class="or">CORRECTO</span></div>''')
 B["s18"]=("background:#000",'''
   <div class="card hv" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="s18-i" src="assets/a17_eads.jpg" style="left:-800px;top:0;width:2898px;height:1920px" /></div>
   '''+V+'''

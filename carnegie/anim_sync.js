@@ -73,10 +73,12 @@ tl.set("#s16-heat",{opacity:0},0);
 tl.to("#s16-heat",{opacity:.6,duration:.06,ease:"none"},55.7);
 tl.to("#s16-heat",{opacity:0,duration:.5,ease:"power2.out"},55.76);
 tl.fromTo("#s16-t",{scale:1.5,opacity:0},{scale:1,opacity:1,duration:.2,ease:"power4.out"},55.7);
-// s17 lo tradicional cambia
-tl.fromTo("#s17-after",{clipPath:"inset(100% 0 0 0)"},{clipPath:"inset(0% 0 0 0)",duration:1.7,ease:"power2.inOut"},S.s17+.3);
-tl.fromTo("#s17-line",{y:0},{y:-1917,duration:1.7,ease:"power2.inOut"},S.s17+.3);
-popUp("#s17-t",S.s17+.1,30);
+// q1/q2/q3: convertidor, alto horno y caricatura
+cardIn("#q1-c",S.q1); tl.fromTo("#q1-i",{scale:1},{scale:1.1,duration:D.q1,ease:"none"},S.q1);
+popUp("#q1-t",S.q1+.1,30);
+tl.fromTo("#q2-i",{scale:1},{scale:1.15,duration:D.q2,ease:"none"},S.q2); slideIn("#q2-t",S.q2+.4);
+cardIn("#q3-c",S.q3); tl.fromTo("#q3-i",{scale:1},{scale:1.08,duration:D.q3,ease:"none"},S.q3);
+fade("#q3-k",S.q3+.2); popUp("#q3-t",S.q3+1.0,30);
 // s18 puentes / s19 ferrocarril / s20 rascacielos
 tl.fromTo("#s18-i",{x:0},{x:-500,duration:D.s18,ease:"none"},S.s18); slideIn("#s18-t",S.s18+.3);
 tl.fromTo("#s19-i",{x:-560},{x:-30,duration:D.s19,ease:"power1.inOut"},S.s19); popUp("#s19-t",S.s19+.2,30);
