@@ -69,9 +69,10 @@ B["s10"]=('','''
 B["s11"]=('','''
   <div id="s11-c" class="card" style="left:40px;top:460px;width:1000px;height:700px"><img id="s11-i" src="assets/a12_telegrafo.jpg" style="left:-266px;top:0;width:1532px;height:700px" /></div>
   <div id="s11-t" class="tx" style="top:1220px;font-size:84px;text-align:center">SECRETARIO<br><span class="or">+ TELEGRAFISTA</span></div>''')
-B["s12"]=('','''
-  <div id="s12-c" class="card" style="left:160px;top:357px;width:760px;height:962px"><img id="s12-i" src="assets/a11_scott.jpg" style="left:0;top:0;width:760px;height:962px" /></div>
-  <div id="s12-t" class="tx" style="top:1369px;font-size:130px;text-align:center">SU <span class="or">MENTOR</span></div>''')
+B["s12"]=("background:#000",'''
+  <div class="card" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="s12-i" src="assets/e1_mentor.jpg" style="left:0;top:0;width:1084px;height:1920px;transform-origin:92% 35%" /></div>
+  '''+V+'''
+  <div id="s12-t" class="tx" style="top:1200px;font-size:130px;color:var(--cream)">SU <span class="or">MENTOR</span></div>''')
 B["s13"]=('','''
   <div class="card" style="left:0;top:300px;width:1080px;height:1000px;border-left:0;border-right:0"><img id="s13-i" src="assets/a13_locomotora.jpg" style="left:0;top:0;width:1645px;height:1000px" /></div>
   <div id="s13-t" class="tx" style="top:1360px;font-size:96px;text-align:center">TRENES<br><span class="or">INVERSIONES</span></div>''')

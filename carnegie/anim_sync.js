@@ -54,8 +54,8 @@ fade("#s10-sub",S.s10+1.5);
 cardIn("#s11-c",S.s11); tl.fromTo("#s11-i",{scale:1},{scale:1.1,duration:D.s11,ease:"none"},S.s11);
 tl.fromTo("#s11-t",{opacity:0,scale:.9},{opacity:1,scale:1,duration:.25,ease:"back.out(2)"},S.s11+.3);
 // s12 mentor / s13 trenes
-cardIn("#s12-c",S.s12); tl.fromTo("#s12-i",{scale:1.1},{scale:1,duration:D.s12,ease:"none"},S.s12);
-tl.fromTo("#s12-t",{scale:.85,opacity:0},{scale:1,opacity:1,duration:.3,ease:"back.out(2)"},S.s12+.3);
+tl.fromTo("#s12-i",{scale:1},{scale:1.12,duration:D.s12,ease:"none"},S.s12);
+slideIn("#s12-t",S.s12+.3);
 tl.fromTo("#s13-i",{x:-30},{x:-560,duration:D.s13,ease:"power1.inOut"},S.s13); popUp("#s13-t",S.s13+.1);
 // s14 puente en llamas
 tl.fromTo("#s14-i",{scale:1},{scale:1.15,duration:D.s14,ease:"none"},S.s14);

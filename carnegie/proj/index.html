@@ -117,9 +117,10 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--cream)}
   <div id="s11-t" class="tx" style="top:1220px;font-size:84px;text-align:center">SECRETARIO<br><span class="or">+ TELEGRAFISTA</span></div>
 </div>
 
-<div id="s12" class="scene clip" data-start="39.6" data-duration="3.7" data-track-index="1" style="z-index:15;">
-  <div id="s12-c" class="card" style="left:160px;top:357px;width:760px;height:962px"><img id="s12-i" src="assets/a11_scott.jpg" style="left:0;top:0;width:760px;height:962px" /></div>
-  <div id="s12-t" class="tx" style="top:1369px;font-size:130px;text-align:center">SU <span class="or">MENTOR</span></div>
+<div id="s12" class="scene clip" data-start="39.6" data-duration="3.7" data-track-index="1" style="z-index:15;background:#000">
+  <div class="card" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="s12-i" src="assets/e1_mentor.jpg" style="left:0;top:0;width:1084px;height:1920px;transform-origin:92% 35%" /></div>
+  <div style="position:absolute;left:0;right:0;top:1000px;height:920px;background:linear-gradient(180deg,rgba(27,26,23,0),rgba(27,26,23,.86))"></div>
+  <div id="s12-t" class="tx" style="top:1200px;font-size:130px;color:var(--cream)">SU <span class="or">MENTOR</span></div>
 </div>
 
 <div id="s13" class="scene clip" data-start="43.3" data-duration="2.5" data-track-index="1" style="z-index:16;">
@@ -257,8 +258,8 @@ fade("#s10-sub",S.s10+1.5);
 cardIn("#s11-c",S.s11); tl.fromTo("#s11-i",{scale:1},{scale:1.1,duration:D.s11,ease:"none"},S.s11);
 tl.fromTo("#s11-t",{opacity:0,scale:.9},{opacity:1,scale:1,duration:.25,ease:"back.out(2)"},S.s11+.3);
 // s12 mentor / s13 trenes
-cardIn("#s12-c",S.s12); tl.fromTo("#s12-i",{scale:1.1},{scale:1,duration:D.s12,ease:"none"},S.s12);
-tl.fromTo("#s12-t",{scale:.85,opacity:0},{scale:1,opacity:1,duration:.3,ease:"back.out(2)"},S.s12+.3);
+tl.fromTo("#s12-i",{scale:1},{scale:1.12,duration:D.s12,ease:"none"},S.s12);
+slideIn("#s12-t",S.s12+.3);
 tl.fromTo("#s13-i",{x:-30},{x:-560,duration:D.s13,ease:"power1.inOut"},S.s13); popUp("#s13-t",S.s13+.1);
 // s14 puente en llamas
 tl.fromTo("#s14-i",{scale:1},{scale:1.15,duration:D.s14,ease:"none"},S.s14);
