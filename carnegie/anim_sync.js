@@ -14,11 +14,19 @@ cardIn("#s2-c",S.s2); tl.fromTo("#s2-i",{scale:1},{scale:1.25,duration:D.s2,ease
 fade("#s2-k",S.s2+.2); slideIn("#s2-t",S.s2+.4);
 // s3 (familia Carnegie / mapa)
 cardIn("#s3-c",S.s3); tl.fromTo("#s3-i",{scale:1},{scale:2.0,duration:D.s3-.4,ease:"power2.inOut"},S.s3+.2); popUp("#s3-t",S.s3+.3,30);
-// s4 pobreza
-tl.fromTo("#s4-i",{x:0},{x:-700,duration:D.s4,ease:"none"},S.s4);
-tl.fromTo("#s4-gray",{opacity:0},{opacity:.85,duration:1,ease:"power1.out"},S.s4);
-fade("#s4-k",S.s4+.1);
-tl.fromTo("#s4-t",{scale:1.4,opacity:0},{scale:1,opacity:1,duration:.2,ease:"power4.out"},S.s4+2.6);
+// p1/p2/p3 fotos (cambio con clic de cámara + destello)
+tl.set("#flash",{opacity:0},0);
+[S.p1,S.p2,S.p3].forEach(t=>{ tl.to("#flash",{opacity:.75,duration:.04,ease:"none"},t); tl.to("#flash",{opacity:0,duration:.18,ease:"power2.out"},t+.04); });
+tl.fromTo("#p1-i",{scale:1},{scale:1.12,duration:D.p1,ease:"none"},S.p1);
+slideIn("#p1-t",S.p1+.1);
+cardIn("#p2-c",S.p2); tl.fromTo("#p2-i",{scale:1},{scale:1.12,duration:D.p2,ease:"none"},S.p2);
+popUp("#p2-t",S.p2+.15,30);
+cardIn("#p3-c",S.p3); tl.fromTo("#p3-i",{scale:1},{scale:1.1,duration:D.p3,ease:"none"},S.p3);
+popUp("#p3-t",S.p3+.15,30);
+// s4 el pequeño Andrew
+tl.fromTo("#s4-i",{x:0},{x:-300,duration:D.s4,ease:"none"},S.s4);
+tl.fromTo("#s4-gray",{opacity:0},{opacity:.85,duration:.8,ease:"power1.out"},S.s4);
+slideIn("#s4-t",S.s4+.1);
 // s5 eligió otro camino
 ["#s5-w1","#s5-w2","#s5-w3"].forEach((id,i)=>tl.fromTo(id,{opacity:0,y:40},{opacity:1,y:0,duration:.25,ease:E},S.s5+.1+i*.45));
 // s6 barco

@@ -2,7 +2,7 @@ import json,sys
 proj="/home/user/videos/carnegie/proj"
 V='<div style="position:absolute;left:0;right:0;top:1000px;height:920px;background:linear-gradient(180deg,rgba(27,26,23,0),rgba(27,26,23,.86))"></div>'
 # (id,start,end)
-T=[("s1",0,3.2),("s2",3.2,6.0),("s3",6.0,9.0),("s4",9.0,15.0),("s5",15.0,16.8),("s6",16.8,19.6),("s7",19.6,21.9),("s8",21.9,24.8),
+T=[("s1",0,3.2),("s2",3.2,6.0),("s3",6.0,9.0),("p1",9.0,10.5),("p2",10.5,12.4),("p3",12.4,14.0),("s4",14.0,15.4),("s5",15.4,16.8),("s6",16.8,19.6),("s7",19.6,21.9),("s8",21.9,24.8),
 ("s9",24.8,32.6),("s10",32.6,37.1),("s11",37.1,39.6),("s12",39.6,43.3),("s13",43.3,45.8),("s14",45.8,49.4),("s15",49.4,54.5),
 ("s16",54.5,59.6),("s17",59.6,62.8),("s18",62.8,66.0),("s19",66.0,68.9),("s20",68.9,71.4),("s21",71.4,73.7),("s22",73.7,77.9),
 ("s23",77.9,82.2),("s24",82.2,86.0)]
@@ -21,12 +21,21 @@ B["s2"]=('','''
 B["s3"]=('','''
   <div id="s3-c" class="card" style="left:40px;top:330px;width:1000px;height:546px;background:#FAF6EA"><img id="s3-i" src="assets/a5_mapa.png" style="left:0;top:0;width:1000px;height:546px;transform-origin:532px 285px" /></div>
   <div id="s3-t" class="tx" style="top:960px;font-size:84px;text-align:center">DUNFERMLINE,<br><span class="or">ESCOCIA</span></div>''')
+B["p1"]=("background:#000",'''
+  <div class="card" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="p1-i" src="assets/b2_fabrica_pintura.jpg" style="left:-123px;top:0;width:1327px;height:1920px" /></div>
+  '''+V+'''
+  <div id="p1-t" class="tx" style="top:1150px;font-size:100px;color:var(--cream)">MILES DE<br><span class="or">TEJEDORES</span></div>''')
+B["p2"]=('','''
+  <div id="p2-c" class="card" style="left:40px;top:280px;width:1000px;height:750px"><img id="p2-i" src="assets/b1_protesta.jpg" style="left:0;top:0;width:1000px;height:750px" /></div>
+  <div id="p2-t" class="tx" style="top:1110px;font-size:120px;text-align:center">POBREZA<br><span class="or">EXTREMA</span></div>''')
+B["p3"]=('','''
+  <div id="p3-c" class="card" style="left:236px;top:200px;width:608px;height:900px"><img id="p3-i" src="assets/b3_maquina.jpg" style="left:0;top:0;width:608px;height:900px" /></div>
+  <div id="p3-t" class="tx" style="top:1150px;font-size:74px;text-align:center">MÁQUINAS TOMARON<br><span class="or">SUS EMPLEOS</span></div>''')
 B["s4"]=("background:#000",'''
   '''+full("s4-i","a6_familia.jpg","left:-60px;top:0;width:1920px;height:1920px")+'''
   <div id="s4-gray" style="position:absolute;inset:0;background:#808080;mix-blend-mode:saturation;opacity:0"></div>
   '''+V+'''
-  <div id="s4-k" class="tx" style="top:960px;font-size:40px;letter-spacing:.16em;color:var(--cream);font-weight:700">MILES DE TEJEDORES</div>
-  <div id="s4-t" class="tx" style="top:1050px;font-size:150px;color:var(--cream);text-align:center">POBREZA<br><span class="or">EXTREMA</span></div>''')
+  <div id="s4-t" class="tx" style="top:1100px;font-size:120px;color:var(--cream)">EL PEQUEÑO<br><span class="or">ANDREW</span></div>''')
 B["s5"]=('','''
   <div class="tx" style="top:640px;font-size:140px;text-align:center;line-height:1.08">
     <span id="s5-w1" style="display:inline-block">ELIGIÓ</span><br>
@@ -126,6 +135,9 @@ html+=f'''
 <div id="s23-veil" class="clip" data-start="{r0}" data-duration="{rd}" data-track-index="3" style="position:absolute;left:0;right:0;top:1000px;height:920px;background:linear-gradient(180deg,rgba(27,26,23,0),rgba(27,26,23,.88));z-index:31"></div>
 <div id="s23-t1" class="tx clip" data-start="{r0}" data-duration="{round(t2-r0,2)}" data-track-index="4" style="top:1160px;font-size:92px;color:var(--cream);z-index:32">LA PRÓXIMA<br><span class="or">MÁQUINA</span> YA LLEGÓ</div>
 <div id="s23-t2" class="tx clip" data-start="{t2}" data-duration="{round(r0+rd-t2,2)}" data-track-index="4" style="top:1160px;font-size:104px;color:var(--cream);z-index:32">¿QUÉ VAS A<br><span class="or">HACER TÚ?</span></div>
+<audio id="cam1" src="assets/camara.wav" data-start="9.0" data-duration="0.19" data-track-index="7" data-volume="0.8"></audio>
+<audio id="cam2" src="assets/camara.wav" data-start="10.5" data-duration="0.19" data-track-index="7" data-volume="0.8"></audio>
+<audio id="cam3" src="assets/camara.wav" data-start="12.4" data-duration="0.19" data-track-index="7" data-volume="0.8"></audio>
 <audio id="voz" src="assets/voz.mp3" data-start="0" data-duration="84.25" data-track-index="6" data-volume="1"></audio>
 '''
 head=open(proj+"/../index_v1_guion_original.html").read()
