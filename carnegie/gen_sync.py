@@ -19,8 +19,8 @@ B["s2"]=('','''
   <div id="s2-k" class="tx" style="top:1020px;font-size:40px;letter-spacing:.16em;color:var(--muted);font-weight:700">REVOLUCIÓN INDUSTRIAL</div>
   <div id="s2-t" class="tx" style="top:1090px;font-size:130px">DÉCADA<br>DE <span class="or">1840</span></div>''')
 B["s3"]=('','''
-  <div id="s3-c" class="card" style="left:40px;top:330px;width:1000px;height:546px;background:#FAF6EA"><img id="s3-i" src="assets/a5_mapa.png" style="left:0;top:0;width:1000px;height:546px;transform-origin:532px 285px" /></div>
-  <div id="s3-t" class="tx" style="top:960px;font-size:84px;text-align:center">DUNFERMLINE,<br><span class="or">ESCOCIA</span></div>''')
+  <div id="s3-c" class="card" style="left:160px;top:200px;width:760px;height:901px"><img id="s3-i" src="assets/c1_familia_carnegie.jpg" style="left:0;top:0;width:760px;height:901px" /></div>
+  <div id="s3-t" class="tx" style="top:1160px;font-size:120px;text-align:center">FAMILIA<br><span class="or">CARNEGIE</span></div>''')
 B["p1"]=("background:#000",'''
   <div class="card" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="p1-i" src="assets/b2_fabrica_pintura.jpg" style="left:-123px;top:0;width:1327px;height:1920px" /></div>
   '''+V+'''

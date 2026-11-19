@@ -43,8 +43,8 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--cream)}
 </div>
 
 <div id="s3" class="scene clip" data-start="6.0" data-duration="3.0" data-track-index="1" style="z-index:3;">
-  <div id="s3-c" class="card" style="left:40px;top:330px;width:1000px;height:546px;background:#FAF6EA"><img id="s3-i" src="assets/a5_mapa.png" style="left:0;top:0;width:1000px;height:546px;transform-origin:532px 285px" /></div>
-  <div id="s3-t" class="tx" style="top:960px;font-size:84px;text-align:center">DUNFERMLINE,<br><span class="or">ESCOCIA</span></div>
+  <div id="s3-c" class="card" style="left:160px;top:200px;width:760px;height:901px"><img id="s3-i" src="assets/c1_familia_carnegie.jpg" style="left:0;top:0;width:760px;height:901px" /></div>
+  <div id="s3-t" class="tx" style="top:1160px;font-size:120px;text-align:center">FAMILIA<br><span class="or">CARNEGIE</span></div>
 </div>
 
 <div id="p1" class="scene clip" data-start="9.0" data-duration="1.5" data-track-index="1" style="z-index:4;background:#000">
@@ -218,7 +218,7 @@ tl.fromTo("#hook-v",{scale:1},{scale:1.08,duration:3.2,ease:"none"},0);
 cardIn("#s2-c",S.s2); tl.fromTo("#s2-i",{scale:1},{scale:1.25,duration:D.s2,ease:"none"},S.s2);
 fade("#s2-k",S.s2+.2); slideIn("#s2-t",S.s2+.4);
 // s3 (familia Carnegie / mapa)
-cardIn("#s3-c",S.s3); tl.fromTo("#s3-i",{scale:1},{scale:2.0,duration:D.s3-.4,ease:"power2.inOut"},S.s3+.2); popUp("#s3-t",S.s3+.3,30);
+cardIn("#s3-c",S.s3); tl.fromTo("#s3-i",{scale:1},{scale:1.12,duration:D.s3,ease:"none"},S.s3); popUp("#s3-t",S.s3+.3,30);
 // p1/p2/p3 fotos (cambio con clic de cámara + destello)
 tl.set("#flash",{opacity:0},0);
 [S.p1,S.p2,S.p3].forEach(t=>{ tl.to("#flash",{opacity:.75,duration:.04,ease:"none"},t); tl.to("#flash",{opacity:0,duration:.18,ease:"power2.out"},t+.04); });

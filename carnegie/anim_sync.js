@@ -13,7 +13,7 @@ tl.fromTo("#hook-v",{scale:1},{scale:1.08,duration:3.2,ease:"none"},0);
 cardIn("#s2-c",S.s2); tl.fromTo("#s2-i",{scale:1},{scale:1.25,duration:D.s2,ease:"none"},S.s2);
 fade("#s2-k",S.s2+.2); slideIn("#s2-t",S.s2+.4);
 // s3 (familia Carnegie / mapa)
-cardIn("#s3-c",S.s3); tl.fromTo("#s3-i",{scale:1},{scale:2.0,duration:D.s3-.4,ease:"power2.inOut"},S.s3+.2); popUp("#s3-t",S.s3+.3,30);
+cardIn("#s3-c",S.s3); tl.fromTo("#s3-i",{scale:1},{scale:1.12,duration:D.s3,ease:"none"},S.s3); popUp("#s3-t",S.s3+.3,30);
 // p1/p2/p3 fotos (cambio con clic de cámara + destello)
 tl.set("#flash",{opacity:0},0);
 [S.p1,S.p2,S.p3].forEach(t=>{ tl.to("#flash",{opacity:.75,duration:.04,ease:"none"},t); tl.to("#flash",{opacity:0,duration:.18,ease:"power2.out"},t+.04); });
