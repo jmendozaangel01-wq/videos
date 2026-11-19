@@ -11,10 +11,9 @@ TOTAL=86.0
 def full(i,src,style,cls=""):
     return f'<div class="card {cls}" style="left:0;top:0;width:1080px;height:1920px;border:0"><img id="{i}" src="assets/{src}" style="{style}" /></div>'
 B={}
-B["s1"]=('','''
-  <div id="s1-c1" class="card" style="left:40px;top:230px;width:1000px;height:667px"><img src="assets/a1_telar_manual.jpg" style="left:0;top:0;width:1000px;height:667px" /></div>
-  <div id="s1-c2" class="card" style="left:40px;top:230px;width:1000px;height:667px;opacity:0"><img src="assets/a2_telar_mecanico.jpg" style="left:-100px;top:-34px;width:1200px;height:771px" /></div>
-  <div id="s1-t" class="tx" style="top:990px;font-size:108px">¿TE <span class="or">REEMPLAZAN</span><br>O TE ADAPTAS?</div>''')
+B["s1"]=("background:transparent",'''
+  <div style="position:absolute;left:0;right:0;top:900px;height:1020px;background:linear-gradient(180deg,rgba(27,26,23,0),rgba(27,26,23,.88))"></div>
+  <div id="s1-t" class="tx" style="top:1010px;font-size:108px;color:var(--cream)">¿TE <span class="or">REEMPLAZAN</span><br>O TE ADAPTAS?</div>''')
 B["s2"]=('','''
   <div id="s2-c" class="card" style="left:40px;top:250px;width:1000px;height:720px"><img id="s2-i" src="assets/a2_telar_mecanico.jpg" style="left:-60px;top:0;width:1121px;height:720px;transform-origin:45% 55%" /></div>
   <div id="s2-k" class="tx" style="top:1020px;font-size:40px;letter-spacing:.16em;color:var(--muted);font-weight:700">REVOLUCIÓN INDUSTRIAL</div>
@@ -112,7 +111,9 @@ B["s22"]=('','''
 B["s24"]=('','''
   <div id="s24-b" style="position:absolute;left:190px;top:700px;width:700px;height:130px;background:var(--orange);color:var(--cream);font-weight:900;font-size:60px;letter-spacing:.08em;display:flex;align-items:center;justify-content:center">SÍGUEME</div>
   <div id="s24-s" class="tx" style="top:880px;font-size:40px;text-align:center;letter-spacing:.14em;color:var(--muted);font-weight:700">PARA MÁS HISTORIAS ASÍ</div>''')
-html=""
+html='''
+<video id="hook-v" class="clip" src="assets/hook_video_src.mp4" muted playsinline data-start="0" data-duration="3.1" data-media-start="16.1" data-track-index="2" style="position:absolute;left:-54px;top:0;width:1188px;height:2112px;object-fit:cover;z-index:0"></video>
+'''
 k=0
 for i,a,b in T:
     if i=="s23": continue
@@ -132,7 +133,7 @@ a=head.index('<!-- 0:00-0:03 HOOK -->'); b=head.index('<div id="flash"')
 out=head[:a]+html+'\n'+head[b:]
 out=out.replace('data-duration="90" data-width','data-duration="%s" data-width'%TOTAL)
 out=out.replace('<div id="flash" class="clip" data-start="0" data-duration="90"','<div id="flash" class="clip" data-start="0" data-duration="%s"'%TOTAL)
-js=open("/tmp/claude-0/-home-user-videos/9ff4aa6d-d13b-507f-8bb1-ac08ceeb58db/scratchpad/anim.js").read()
+js=open("/home/user/videos/carnegie/anim_sync.js").read()
 js=js.replace("__S__",json.dumps(S)).replace("__D__",json.dumps(D))
 sa=out.index('<script>',out.index('<div id="flash"')); sb=out.index('</script>',sa)
 out=out[:sa]+'<script>'+js+out[sb:]

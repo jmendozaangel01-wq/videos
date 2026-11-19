@@ -6,16 +6,9 @@ const slideIn=(id,t,x=80)=>tl.fromTo(id,{x:x,opacity:0},{x:0,opacity:1,duration:
 const popUp=(id,t,y=40)=>tl.fromTo(id,{y:y,opacity:0},{y:0,opacity:1,duration:.3,ease:E},t);
 const cardIn=(id,t)=>tl.fromTo(id,{opacity:0,y:50},{opacity:1,y:0,duration:.3,ease:E},t);
 const fade=(id,t)=>tl.fromTo(id,{opacity:0},{opacity:1,duration:.3},t);
-// flash global (corte del hook)
-tl.set("#flash",{opacity:0},0);
-tl.to("#flash",{opacity:.9,duration:.05,ease:"none"},1.4);
-tl.to("#flash",{opacity:0,duration:.25,ease:"power2.out"},1.45);
-// s1
+// s1 hook (video con texto)
 tl.fromTo("#s1-t",{scale:1.14},{scale:1,duration:.22,ease:"back.out(2)"},0);
-tl.fromTo("#s1-c1",{scale:1},{scale:1.06,duration:1.45,ease:"none"},0);
-tl.set("#s1-c1",{opacity:0},1.45); tl.set("#s1-c2",{opacity:1},1.45);
-tl.fromTo("#s1-c2",{scale:1},{scale:1.1,duration:1.75,ease:"power2.in"},1.45);
-tl.fromTo("#s1-t",{x:-14},{x:0,duration:.35,ease:"elastic.out(1,.3)"},1.45);
+tl.fromTo("#hook-v",{scale:1},{scale:1.08,duration:3.2,ease:"none"},0);
 // s2 (revolución industrial 1840)
 cardIn("#s2-c",S.s2); tl.fromTo("#s2-i",{scale:1},{scale:1.25,duration:D.s2,ease:"none"},S.s2);
 fade("#s2-k",S.s2+.2); slideIn("#s2-t",S.s2+.4);
